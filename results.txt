@@ -1,0 +1,4 @@
+Write to RO page
+Offset out of range
+Page exceeds seg limit
+Segmentation Fault: bad segment
