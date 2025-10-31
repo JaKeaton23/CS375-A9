@@ -1,0 +1,10 @@
+# happy path read
+<S_RW> 0 0 0
+# happy path write (needs RW)
+<S_RW> 1 8 1
+# force protection violation (pick RO seg or RO page)
+<S_RO> 0 0 1
+# force segmentation fault: page >= Limit
+<S_ANY> <Limit> 0 0
+# force offset fault: offset >= page_size
+<S_ANY> 0 <page_size> 0
